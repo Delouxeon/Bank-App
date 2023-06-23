@@ -22,16 +22,16 @@ const Update = () => {
           </div>
         <div className="form-group">
             <div className="form-field1">
-                <label htmlFor="email">Last Name</label> <br />
+                <label htmlFor="lname">Last Name</label> <br />
                 <input type='text'/>
             </div>
             <div className="form-field2">
-                <label htmlFor="email">Country</label> <br />
+                <label htmlFor="country">Country</label> <br />
                 <input type='text'/>
             </div>
         </div>
         <div className="form-field">
-            <label htmlFor="number">BVN</label> <br />
+            <label htmlFor="bvn">BVN</label> <br />
             <input type='text'/>
         </div>
         <div className="form-field">
@@ -39,11 +39,11 @@ const Update = () => {
             <input type='text'/>
         </div>
         <div className="form-field">
-            <label htmlFor="email">Residential Address</label> <br />
+            <label htmlFor="address">Residential Address</label> <br />
             <input type='text'/>
         </div>
-        <button className='del'>Save changes</button>
-        <button className='cancel'>Cancel</button>
+        <button className='del btn'>Save changes</button>
+        <button className='cancel btn'>Cancel</button>
     </section>
   );
 };
