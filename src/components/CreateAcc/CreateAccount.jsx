@@ -1,16 +1,20 @@
 import React from 'react';
+import SaverbankLogo from '../../assets/SaverbankLogo.png';
+import greenHandEmoji from '../../assets/greenHandEmoji.png';
 
 function CreateAccount() {
   return (
-    <div>
-      <header></header>
+    <div className ="createAccountContainer">
+      <header>
+        <img src = {SaverbankLogo} />
+      </header>
       <form action="">
         <div className="form-header">
-          <h1 className="form-heading">Create an Account</h1>{" "}
+          <h1 className="form-heading">Create an Account</h1>
           <span>
-            <img src="" alt="" />
+            <img src={greenHandEmoji} alt="" />
           </span>
-          <p className="form-header-p"></p>
+          <p className="form-header-p">Please enter required information</p>
         </div>
         <div className="inputs-wrapper">
           <div className="first-name">
@@ -39,6 +43,9 @@ function CreateAccount() {
           </div>
           <div className="signUp-btn">
             <input className="btn" type="submit" value= "Sign Up" />
+          </div>
+          <div className="log-in-call">
+            <p>Do you have an account? <a>Login</a> </p> 
           </div>
         </div>
       </form>

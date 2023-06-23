@@ -3,8 +3,7 @@ import './App.css';
 import {Navigate, Routes} from "react-router-dom";
 import {Route} from "react-router-dom";
 import CreateAccount from "./CreateAcc/CreateAccount";
-import UpdateAccount from "./UpdateAccount/UpdateAccount";
-import DeleteAccount from "./DeleteAccount/DeleteAccount";
+
 
 
 

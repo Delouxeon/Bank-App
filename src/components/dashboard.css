@@ -1,7 +1,8 @@
-.sect {
-    display: flex;
+.sect{
+    display:flex;
     background-color: rgba(128, 128, 128, 0.26);
 }
+
 aside {
     display: flex;
     flex-direction: column;

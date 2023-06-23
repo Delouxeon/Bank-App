@@ -1,0 +1,52 @@
+.createAccountContainer{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 55% 45%;
+}
+header{
+    grid-column : 1/2;
+    grid-row: 1/2;
+    display: flex;
+    padding-left: 
+}
+
+form{
+    grid-column : 1/2;
+    grid-row: 2/3;
+    padding: .2rem 2rem 2rem 1.5rem;
+}
+
+
+.bg-img-section{
+    grid-column : 2/3;
+    grid-row: 1/-1;
+    background-image: url('../../assets/bgImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-header{
+    padding: 1rem 0;
+}
+
+.form-header h1{
+    margin-bottom: 0.7rem;
+}
+
+.form-header p{
+    
+}
+
+.inputs-wrapper{
+    max-width: 500px;
+
+}
+
+.log-in-call a{
+    color:#81B29A;
+}
+
+label{
+    font-weight: bold;
+}
+
