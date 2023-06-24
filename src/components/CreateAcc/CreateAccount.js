@@ -23,7 +23,9 @@ function CreateAccount({formArray}) {
         <button className='btn SignUp' onClick={() => changeComponent(1)}>Sign Up</button>
         {ActiveComponent && <ActiveComponent />}
       </main>
-      <section className="bg-img-section"></section>
+      <section className="bg-img-section">
+        <img src={bgImage} alt="Background Image" /> 
+      </section>
     </div>
   );
 }
