@@ -6,6 +6,8 @@ import Dashboard from "./UserDashboard/Dashboard";
 import CreateAccount from "./CreateAcc/CreateAccount";
 import DeleteAccount from "./DeleteAcc/DeleteAccount";
 import UpdateAccount from "./UpdateAcc/UpdateAccount";
+import SendAndReceive from "./SendAndReceive/SendAndReceive";
+import Transactions from "./ViewTransactions/Transactions";
 import LogIn from './Forms/LogIn';
 import SignUp from './Forms/SignUp';
 
@@ -13,7 +15,7 @@ import SignUp from './Forms/SignUp';
 
 
 function App() {
-  const components = [UpdateAccount, DeleteAccount];
+  const components = [UpdateAccount, DeleteAccount, SendAndReceive, Transactions];
   const formArray = [LogIn, SignUp];
 
   return (
