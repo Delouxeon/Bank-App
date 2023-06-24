@@ -6,7 +6,7 @@ function CreateAccount() {
   return (
     <div className ="createAccountContainer">
       <header>
-        <img src = {SaverbankLogo} />
+        <img src = {SaverbankLogo} alt='SaverBank Logo'/>
       </header>
       <form action="">
         <div className="form-header">
