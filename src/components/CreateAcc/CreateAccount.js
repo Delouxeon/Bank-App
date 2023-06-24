@@ -2,10 +2,9 @@ import { useState } from 'react';
 import React from 'react';
 import './CreateAccount.css'
 import SaverbankLogo from '../../assets/SaverbankLogo.png';
-import greenHandEmoji from '../../assets/greenHandEmoji.png';
+
 
 function CreateAccount({formArray}) {
-
   const [activeIndex, setActiveIndex] = useState(0);
   const ActiveComponent = formArray[activeIndex];
 
