@@ -41,8 +41,8 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(2)}
-            className={`div ${activeIndex === 2 ? "active" : ""}`}
+            onClick={() => changeComponent(3)}
+            className={`div ${activeIndex === 3 ? "active" : ""}`}
           >
             <img src={transactionsIcon} alt="Transactions" />
             <div>
@@ -50,17 +50,17 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(3)}
-            className={`div ${activeIndex === 3 ? "active" : ""}`}
+            onClick={() => changeComponent(4)}
+            className={`div ${activeIndex === 4 ? "active" : ""}`}
           >
-            <img src={navNotificationBell} alt="Transactions" />
+            <img src={navNotificationBell} alt="Notification Bell" />
             <div>
               <h3>Notifications</h3>
             </div>
           </div>
           <div
-            onClick={() => changeComponent(4)}
-            className={`div ${activeIndex === 4 ? "active" : ""}`}
+            onClick={() => changeComponent(2)}
+            className={`div ${activeIndex === 2 ? "active" : ""}`}
           >
             <img src={sendAndReceiveIcon} alt="Receive" />
             <div>
