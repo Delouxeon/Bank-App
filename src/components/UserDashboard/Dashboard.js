@@ -20,7 +20,7 @@ const Dashboard = ({ components }) => {
 
   return (
     <React.Fragment>
-      <div className="">
+      <div className="sect">
         <nav>
           <div
             onClick={() => changeComponent(7)}
