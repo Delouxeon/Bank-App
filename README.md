@@ -4,7 +4,7 @@
 
 This is a basic bank application created using react. 
 The landing Page gives the user an option to Log In or Sign Up.
-After Signing up or Loging in, the user is taken to the user's account page, which contains a navigation bar with dofferent items, including options to: delete account, update account, send & receive money and also view transactions.
+After Signing up or Loging in, the user is taken to the user's account page, which contains a navigation bar with different items, including options to: delete account, update account, send & receive money and also view transactions.
 
 ## Getting Started with Create React App (Guidelines on How to run the Application)
 
