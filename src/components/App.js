@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
         <Routes> 
-          <Route exact path="/" element={<CreateAccount />} />
+          < Route exact path="/" element={<CreateAccount />} />
           {/* <Navigate to="/" /> */}
         </Routes>
     </div>

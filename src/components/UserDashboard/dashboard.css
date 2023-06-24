@@ -3,7 +3,7 @@
     background-color: rgba(128, 128, 128, 0.26);
 }
 
-aside {
+nav {
     display: flex;
     flex-direction: column;
     width: 20%;

@@ -1,5 +1,7 @@
 import React from 'react';
 import './update.css'
+import profilePic from '../../assets/profilePic.png'
+import cameraIcon from '../../assets/cameraIcon.png'
 
 const Update = () => {
   
@@ -7,8 +9,8 @@ const Update = () => {
   return (
     <section className="details">
         <div>
-            <img></img>
-            <img></img>
+            <img src = {profilePic}/>
+            <img src = {cameraIcon}/>
         </div>
         <div className="form-group">
             <div className="form-field1">

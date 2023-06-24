@@ -12,7 +12,7 @@ const Dashboard = ({ components }) => {
   return (
     <React.Fragment>
       <div className=''>
-        <aside>
+        <nav>
           <div onClick={() => changeComponent(0)}  className={`div ${activeIndex === 0 ?'active' : ''}`}>
             <img src='' alt='dashboard' />
             <div>
@@ -37,7 +37,7 @@ const Dashboard = ({ components }) => {
               <h3>Settings</h3>
             </div>
           </div>
-        </aside>
+        </nav>
         <div className="container">
           <div className='header'>
             <p>Account Update</p>

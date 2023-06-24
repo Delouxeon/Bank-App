@@ -39,7 +39,9 @@ form{
 
 .inputs-wrapper{
     max-width: 500px;
-
+    display: flex;
+    flex-direction: column;
+    gap:5px; 
 }
 
 .log-in-call a{
