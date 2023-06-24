@@ -1,1 +1,9 @@
 
+.details{
+    width: 70%;
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
