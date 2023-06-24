@@ -23,8 +23,8 @@ const Dashboard = ({ components }) => {
       <div className="">
         <nav>
           <div
-            onClick={() => changeComponent(0)}
-            className={`div ${activeIndex === 0 ? "active" : ""}`}
+            onClick={() => changeComponent(7)}
+            className={`div ${activeIndex === 7 ? "active" : ""}`}
           >
             <img src={dashboardIcon} alt="dashboard" />
             <div>
@@ -32,8 +32,8 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(1)}
-            className={`div ${activeIndex === 1 ? "active" : ""}`}
+            onClick={() => changeComponent(6)}
+            className={`div ${activeIndex === 6 ? "active" : ""}`}
           >
             <img src={cardsAndReceiptIcon} alt="cardsAndReceipt" />
             <div>
@@ -69,7 +69,7 @@ const Dashboard = ({ components }) => {
           </div>
           <div
             onClick={() => changeComponent(5)}
-            className={`div ${activeIndex >= 5 ? "active" : ""}`}
+            className={`div ${activeIndex === 5 ? "active" : ""}`}
           >
             <img src={settingsIcon} alt="Settings" />
             <div>
@@ -77,8 +77,8 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(6)}
-            className={`div ${activeIndex >= 6 ? "active" : ""}`}
+            onClick={() => changeComponent(0)}
+            className={`div ${activeIndex === 0 ? "active" : ""}`}
           >
             <img src={updateIcon} alt="Update" />
             <div>
@@ -86,8 +86,8 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(7)}
-            className={`div ${activeIndex >= 7 ? "active" : ""}`}
+            onClick={() => changeComponent(1)}
+            className={`div ${activeIndex >= 1 ? "active" : ""}`}
           >
             <img src={deleteIcon} alt="Delete" />
             <div>

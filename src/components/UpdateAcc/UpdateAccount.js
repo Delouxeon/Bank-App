@@ -3,7 +3,7 @@ import './update.css'
 import profilePic from '../../assets/profilePic.png'
 import cameraIcon from '../../assets/cameraIcon.png'
 
-const Update = () => {
+const UpdateAccount = () => {
   
 
   return (
@@ -50,4 +50,4 @@ const Update = () => {
   );
 };
 
-export default Update;
+export default UpdateAccount;
