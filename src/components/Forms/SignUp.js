@@ -1,5 +1,5 @@
 import React from 'react';
-import './forms.css'
+import '../Forms/MyForms.css';
 import greenHandEmoji from '../../assets/greenHandEmoji.png';
 
 function SignUp() {

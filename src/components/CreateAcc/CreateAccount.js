@@ -2,6 +2,7 @@ import { useState } from 'react';
 import React from 'react';
 import './CreateAccount.css'
 import SaverbankLogo from '../../assets/SaverbankLogo.png';
+import bgImage from '../../assets/bgImage.png';
 
 
 function CreateAccount({formArray}) {
@@ -19,12 +20,14 @@ function CreateAccount({formArray}) {
       </header>
       <main>
         <h1>Welcome to Saver Bank</h1>
-        <button className='btn logInBtn' onClick={() => changeComponent(0)}>Log In</button>
-        <button className='btn SignUp' onClick={() => changeComponent(1)}>Sign Up</button>
+        <div className='button-wrapper'>
+          <button className='btn logInBtn' onClick={() => changeComponent(0)}>Log In</button>
+          <button className='btn SignUp' onClick={() => changeComponent(1)}>Sign Up</button>
+        </div>
         {ActiveComponent && <ActiveComponent />}
       </main>
       <section className="bg-img-section">
-        <img src={bgImage} alt="Background Image" /> 
+        <img className='backgroundImg' src={bgImage} alt="Background Image" /> 
       </section>
     </div>
   );
