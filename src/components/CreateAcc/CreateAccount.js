@@ -6,13 +6,13 @@ function CreateAccount() {
   return (
     <div className ="createAccountContainer">
       <header>
-        <img src = {SaverbankLogo} alt='SaverBank Logo'/>
+        <img src = {SaverbankLogo} alt='Saver Bank Logo'/>
       </header>
       <form action="">
         <div className="form-header">
           <h1 className="form-heading">Create an Account</h1>
           <span>
-            <img src={greenHandEmoji} alt="" />
+            <img src={greenHandEmoji} alt="green hand emoji" />
           </span>
           <p className="form-header-p">Please enter required information</p>
         </div>

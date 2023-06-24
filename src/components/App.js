@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import Routes from "react-router-dom";
+import {Routes} from "react-router-dom";
 import {Route} from "react-router-dom";
 import CreateAccount from "./CreateAcc/CreateAccount";
 
