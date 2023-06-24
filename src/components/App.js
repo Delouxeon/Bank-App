@@ -6,17 +6,20 @@ import Dashboard from "./UserDashboard/Dashboard";
 import CreateAccount from "./CreateAcc/CreateAccount";
 import DeleteAccount from "./DeleteAcc/DeleteAccount";
 import UpdateAccount from "./UpdateAcc/UpdateAccount";
+import LogIn from './Forms/LogIn';
+import SignUp from './Forms/SignUp';
 
 
 
 
 function App() {
   const components = [UpdateAccount, DeleteAccount];
+  const formArray = [LogIn, SignUp];
 
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<CreateAccount />} />
+        <Route exact path="/" element= {<CreateAccount components={formArray}/>} />
         <Route path="/public/userPage.html" element= {<Dashboard components={components}/>} />
       </Routes>
     </div>
