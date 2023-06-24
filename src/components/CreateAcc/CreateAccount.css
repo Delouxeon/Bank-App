@@ -25,30 +25,5 @@ form{
     background-size: cover;
 }
 
-.form-header{
-    padding: 1rem 0;
-}
 
-.form-header h1{
-    margin-bottom: 0.7rem;
-}
-
-.form-header p{
-    
-}
-
-.inputs-wrapper{
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap:5px; 
-}
-
-.log-in-call a{
-    color:#81B29A;
-}
-
-label{
-    font-weight: bold;
-}
 

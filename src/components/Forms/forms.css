@@ -1,0 +1,37 @@
+.form-header{
+    padding: 1rem 0;
+}
+
+.form-header h1{
+    margin-bottom: 0.7rem;
+}
+
+.form-header p{
+    
+}
+
+.inputs-wrapper{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap:5px; 
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border:1px solod #8E90A0;
+    border-radius: 4px
+}
+
+input :focus{
+    border:2px solod #8E90A0;
+}
+
+.log-in-call a{
+    color:#81B29A;
+}
+
+label{
+    font-weight: bold;
+}
