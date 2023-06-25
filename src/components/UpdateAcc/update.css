@@ -1,15 +1,61 @@
 .details{
-    justify-content: flex-start;
+    width: 70%;
+    display: flex;
+    margin: 20px auto;
     flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
     padding: 20px;
-    gap: 20px;
 }
+
+.pictureSection{
+    /* display: flex; */
+}
+
+.profilePicSection{
+    position: relative;
+    width: 200px;
+
+}
+
+
+.cameraIconBg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #81B29A;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.picUploadBtn{
+    position: absolute;
+    bottom: 30%;
+    left: 15rem;
+}
+
+.camera-icon{
+    width: 10px;
+    height: 10px;
+}
+
+
+
 .details div {
     width: 100%;
     margin: 0;
     text-align: left;
 }
-.form-group{
+
+form{
+    margin-top: 2rem;
+}
+/* .form-group{
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -28,14 +74,48 @@
 }
 .form-field2 input{
     width: 60%;
+} */
+
+.inputs-wrapper{
+    display: grid;
+    gap:.7rem; 
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(9, 1fr);
 }
-input{
-    height: 41px;
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+    justify-self: start;
+}
+
+textarea{
+    resize: none;
+}
+
+input, textarea{
+    width: 100%;
     border-radius: 4px;
     border: 1px solid #8E90A0;
     padding: 10px;
 }
-input:focus{
+input:focus,
+textarea:focus
+{
     outline: none;
     border: 2px solid #8E90A0;
+}
+
+.cancel{
+    border : 1px solid #81B29A
+}
+
+
+@media (min-width: 768px){
+    .inputs-wrapper{
+        grid-template-columns: 3fr 1fr;
+        grid-template-columns: repeat(7, 1fr);
+    }
 }

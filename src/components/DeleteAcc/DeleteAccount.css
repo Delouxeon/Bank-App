@@ -4,6 +4,7 @@
     margin: 20px auto;
     flex-direction: column;
     justify-content: center;
+    border-radius: 8px;
     background-color: #fff;
 }
 .details div{
