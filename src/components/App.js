@@ -21,7 +21,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element= {<CreateAccount components={formArray}/>} />
+        <Route exact path="/" element= {<CreateAccount formComponents={formArray}/>} />
         <Route path="/public/userPage.html" element= {<Dashboard components={components}/>} />
       </Routes>
     </div>

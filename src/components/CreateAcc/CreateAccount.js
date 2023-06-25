@@ -5,9 +5,9 @@ import SaverbankLogo from '../../assets/SaverbankLogo.png';
 import bgImage from '../../assets/bgImage.png';
 
 
-function CreateAccount({formArray}) {
+function CreateAccount({ formComponents }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const ActiveComponent = formArray[activeIndex];
+  const ActiveComponent = formComponents[activeIndex];
 
   const changeComponent = (index) => {
     setActiveIndex(index);
@@ -16,13 +16,15 @@ function CreateAccount({formArray}) {
   return (
     <div className="Container">
       <header>
-        <img src={SaverbankLogo} alt="Saver Bank Logo" />
+        <img src={SaverbankLogo} alt="Saver Bank Logo" className='BankLogo' />
       </header>
       <main>
-        <h1>Welcome to Saver Bank</h1>
-        <div className='button-wrapper'>
-          <button className='btn logInBtn' onClick={() => changeComponent(0)}>Log In</button>
-          <button className='btn SignUp' onClick={() => changeComponent(1)}>Sign Up</button>
+        <div className='welcome-section'>
+          <h1>Welcome to Saver Bank</h1>
+          <div className='button-wrapper'>
+            <a className='btn logInBtn' onClick={() => changeComponent(0)}>Log In</a>
+            <a className='btn SignUpBtn' onClick={() => changeComponent(1)}>Sign Up</a>
+          </div>
         </div>
         {ActiveComponent && <ActiveComponent />}
       </main>

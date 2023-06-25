@@ -12,14 +12,26 @@ body{
 }
 
 .btn{
+    cursor: pointer;
     outline: none;
     border: none;
     background-color: #81B29A;
     color: #FFFFFF;
-    border-radius: 16px
+    border-radius: 5px;
+    padding: 1rem 2.2rem;
+    /* font-size: 1rem; */
 }
 
-.btn :hover{
+.btn:hover{
     background-color: #4F6D5E;
     font-weight: bold;
+}
+
+.input-btn{
+    border-radius: 16px;
+}
+
+
+a{
+    text-decoration:none;
 }
