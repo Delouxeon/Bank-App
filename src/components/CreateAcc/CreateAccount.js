@@ -5,6 +5,7 @@ import SaverbankLogo from '../../assets/SaverbankLogo.png';
 import bgImage from '../../assets/bgImage.png';
 
 
+
 function CreateAccount({ formComponents }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const ActiveComponent = formComponents[activeIndex];

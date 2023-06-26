@@ -5,7 +5,6 @@ import cameraIcon from '../../assets/cameraIcon.png'
 
 const UpdateAccount = () => {
   
-
   return (
     <section className="details">
         <div className='profilePicSection'>
@@ -16,40 +15,40 @@ const UpdateAccount = () => {
             <a className='btn picUploadBtn' >Upload Now</a>
         </div>
         <form>
-            <div className='inputs-wrapper'>
-                <div className="input-div form-field1">
+            <div className='formInputs-wrapper'>
+                <div className="inputs-div form-field1">
                     <label htmlFor="fname">First Name</label> 
                     <input type='text'/>
                 </div>
-                <div className="input-div form-field2">
+                <div className="inputs-div form-field2">
                     <label htmlFor="gender">Gender</label> 
                     <input type='text'/>
                 </div>
-                <div className="input-div form-field3">
+                <div className="inputs-div form-field3">
                     <label htmlFor="lname">Last Name</label>
                     <input type='text'/>
                 </div>
-                <div className="input-div form-field4">
+                <div className="inputs-div form-field4">
                     <label htmlFor="country">Country</label> 
                     <input type='text'/>
                 </div>
             
-                <div className="input-div form-field5">
+                <div className="inputs-div form-field5">
                     <label htmlFor="bvn">BVN</label>
                     <input type='text'/>
                 </div>
-                <div className="input-div form-field6">
+                <div className="inputs-div form-field6">
                     <label htmlFor="email">Phone Number</label>
                     <input type='text'/>
                 </div>
-                <div className="input-div form-field7">
+                <div className="inputs-div form-field7">
                     <label htmlFor="address">Residential Address</label>
                     <textarea cols='30' rows='3'></textarea>
                 </div>
-                <div className="input-div form-field8">
+                <div className="inputs-div form-field8">
                     <input className='del btn input-btn' value ='Save changes' type='submit'/>
                 </div>
-                <div className="input-div form-field9">
+                <div className="inputs-div form-field9">
                     <input className='cancel btn input-btn' value='Cancel' type='button'/>
                 </div>
             </div>

@@ -4,21 +4,16 @@ import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 function LogIn() {
-  
-
-  const data1 = useRef(null);
-  const data2 = useRef(null);
+  const email = useRef(null);
+  const password = useRef(null);
   const [validate, setValidate] = useState(false);
 
   function checkInputs() {
-    if(data1.value.trim().length === 0){
-      alert('Input field cannot be empty...')
-    } 
-    else if(data2.value.trim().length === 0){
-      alert('Input field cannot be empty...')
-    }
-    else{
+    if(email.current.value.trim().length && password.currentvalue.trim().length !== 0){
       setValidate(true);
+    } 
+    else{
+      alert('Input field cannot be empty...');
     }
   }
 
@@ -28,17 +23,25 @@ function LogIn() {
             <h2 className="form-heading">Log In</h2>
           </div>
           <div className="inputs-wrapper">
-            <div className="email">
+            <div className="email-div">
               <label htmlFor="email">Email Address</label> <br />
-              <input className='input email-input' ref={data1} type="email" />
+              <input className='input email-input' ref={email} type="email" />
             </div>
             <div className="password-div">
               <label htmlFor="password">Password</label> <br />
-              <input className='input password-input' ref={data2} type="password" />
+              <input className='input password-input' ref={password} type="password" />
             </div>
             <div className="logIn-btn-div">
-              <Link to= '../../../public/userPage.html'>
-                <input className="btn input-btn logIn-btn" type="submit" value="Log In" />
+              {/* {
+              (validate === true)?
+                <Link to='../../../public/userPage.html'>
+                  <input onClick={checkInputs} onSubmit={checkInputs} className="btn input-btn logIn-btn" type="submit" value="Log In" />
+                </Link>
+              : 
+              <input onClick={checkInputs} onSubmit={checkInputs} className ="btn input-btn logIn-btn" type="submit" value="Log In" />
+              } */}
+              <Link to='../../../public/userPage.html'>
+                  <input onClick={checkInputs} onSubmit={checkInputs} className="btn input-btn logIn-btn" type="submit" value="Log In" />
               </Link>
             </div>
             <div className="sign-up-call">

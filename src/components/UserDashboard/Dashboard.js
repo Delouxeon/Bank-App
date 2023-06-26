@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './dashboard.css';
+import SaverbankLogo from '../../assets/SaverbankLogo.png';
+import profilePic from '../../assets/profilePic.png'
 import updateIcon from '../../assets/updateIcon.png'
 import deleteIcon from "../../assets/deleteIcon.png";
 import navNotificationBell from "../../assets/navNotificationBell.png";
@@ -22,6 +24,9 @@ const Dashboard = ({ components }) => {
     <React.Fragment>
       <div className="sect">
         <nav>
+          <div className='logo-container'>
+            <img src={SaverbankLogo} alt="Saver Bank Logo" className='BankLogo' />
+          </div>
           <div
             onClick={() => changeComponent(7)}
             className={`div ${activeIndex === 7 ? "active" : ""}`}
@@ -110,10 +115,13 @@ const Dashboard = ({ components }) => {
             {/* replace with user name after api call */}
             <div className="profile">
               <div className="img">
-                <img src="" alt="Profile" />
+              <img src = {profilePic} alt='profile pic' className='profile-pic'/>
               </div>
               <h4>Smith Daniel</h4>
             </div>
+          </div>
+          <div>
+
           </div>
           {ActiveComponent && <ActiveComponent />}
         </div>
