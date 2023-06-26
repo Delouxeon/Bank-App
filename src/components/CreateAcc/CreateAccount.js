@@ -1,88 +1,39 @@
-import React from 'react';
-import SaverbankLogo from '../../assets/SaverbankLogo.png';
-import greenHandEmoji from '../../assets/greenHandEmoji.png';
+import { useState } from "react";
+import React from "react";
+import "./CreateAccount.css";
+import SaverbankLogo from "../../assets/SaverbankLogo.png";
+import bgImage from "../../assets/bgImage.png";
 
-function CreateAccount() {
+function CreateAccount({ formComponents }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const ActiveComponent = formComponents[activeIndex];
+
+  const changeComponent = (index) => {
+    setActiveIndex(index);
+  };
+
   return (
-    <div className="createAccountContainer">
+    <div className="Container">
       <header>
-        <img src={SaverbankLogo} alt="Saver Bank Logo" />
+        <img src={SaverbankLogo} alt="Saver Bank Logo" className="BankLogo" />
       </header>
       <main>
-        <h1>Welcome to Saver Bank</h1>
-        <button className>Log In</button>
-        <button>Sign Up</button>
+        <div className="welcome-section">
+          <h1>Welcome to Saver Bank</h1>
+          <div className="button-wrapper">
+            <a className="btn logInBtn" onClick={() => changeComponent(0)}>
+              Log In
+            </a>
+            <a className="btn SignUpBtn" onClick={() => changeComponent(1)}>
+              Sign Up
+            </a>
+          </div>
+        </div>
+        {ActiveComponent && <ActiveComponent />}
       </main>
-      <section className="forms-wrapper">
-        <form id="logIn-form" className="logIn-form" action="">
-          <div className="form-header">
-            <h2 className="form-heading">Login</h2>
-          </div>
-          <div className="inputs-wrapper">
-            <div className="email">
-              <label htmlFor="email">Email Address</label> <br />
-              <input type="email" />
-            </div>
-            <div className="password">
-              <label htmlFor="password">Password</label> <br />
-              <input type="password" />
-            </div>
-            <div className="logIn-btn-div">
-              <input className="btn logIn-btn" type="submit" value="Log In" />
-            </div>
-            <div className="sign-up-call">
-              <p>
-                Don't have an account? <a href="">Sign Up</a>
-              </p>
-            </div>
-          </div>
-        </form>
-        <form className="signUp-form" action="">
-          <div className="form-header">
-            <h2 className="form-heading">Create an Account</h2>
-            <span>
-              <img src={greenHandEmoji} alt="green hand emoji" />
-            </span>
-            <p className="form-header-p">Please enter required information</p>
-          </div>
-          <div className="inputs-wrapper">
-            <div className="firstName-div">
-              <label htmlFor="fname">First Name</label> <br />
-              <input type="text" />
-            </div>
-            <div className="lastName-div">
-              <label htmlFor="lname">Last Name</label> <br />
-              <input type="text" />
-            </div>
-            <div className="email-div">
-              <label htmlFor="email">Email Address</label> <br />
-              <input type="email" />
-            </div>
-            <div className="phoneNo-div">
-              <label htmlFor="phone-no">Phone Number</label> <br />
-              <input type="tel" />
-            </div>
-            <div className="password-div">
-              <label htmlFor="password">Password</label> <br />
-              <input type="password" />
-            </div>
-            <div className="confirm-password-div">
-              <label htmlFor="confirm-password">Confirm Password</label> <br />
-              <input type="password" />
-            </div>
-            <div className="signUp-btn-div">
-              <input className="btn signUp-btn" type="submit" value="Sign Up" />
-            </div>
-            <div className="log-in-call">
-              <p>
-                Do you have an account? <a href>Login</a>
-              </p>
-            </div>
-          </div>
-        </form>
+      <section className="bg-img-section">
+        <img className="backgroundImg" src={bgImage} alt="Background Image" />
       </section>
-
-      <section className="bg-img-section"></section>
     </div>
   );
 }

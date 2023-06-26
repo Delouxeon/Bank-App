@@ -1,21 +1,28 @@
 .details{
     width: 70%;
+    max-width: 500px;
     display: flex;
     margin: 20px auto;
     flex-direction: column;
     justify-content: center;
+    border-radius: 8px;
     background-color: #fff;
 }
-.details div{
+.wrapper{
     width: 70%;
-    margin: auto;
+    margin: 4rem auto 2rem;
     text-align: center;
+    display: grid;
+    gap:.7rem;
 }
-.details p{
+
+
+
+.details h5{
     font-size: 20px;
     font-weight: 700;
 }
-.details h5{
+.details p{
     font-size: 16px;
     line-height: 18.75px;
     font-weight: 400;
@@ -26,8 +33,9 @@
     border-radius: 8px;
     padding: 10px 10px 20px;
 }
-.warning p{
+.warning h5{
     color: #E07A5F;
+    margin-bottom: .5rem;
 }
 button{
     width: 70%;

@@ -11,6 +11,11 @@ nav {
     font-size: 13px;
     background-color: #fff;
 }
+
+.logo-container{
+    padding: 2.2rem
+}
+
 .div {
     display: flex;
     align-items: center;

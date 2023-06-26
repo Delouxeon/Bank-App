@@ -1,0 +1,68 @@
+.signUp-form,
+.logIn-form{
+    margin:auto
+}
+
+.form-header{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+/* .form-header h2{
+    margin-bottom: 0.7rem;
+} */
+
+p{
+    color:#333333;
+}
+
+.inputs-wrapper{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem; 
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border:1px solid #8E90A0;
+    border-radius: 4px;
+}
+
+.input{
+    background: transparent;
+}
+
+input :focus{
+    border:2px solid #8E90A0;
+}
+
+.log-in-call a,
+.sign-up-call a{
+    color:#81B29A;
+}
+
+label{
+    font-weight: bold;
+}
+
+.h2-div{
+    display: flex;
+    gap: .5rem;
+}
+
+.greenHandBox{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.greenHandEmoji{
+    width: 100%;
+    height: 100%;
+}
+

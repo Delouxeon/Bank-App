@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './dashboard.css';
+import SaverbankLogo from '../../assets/SaverbankLogo.png';
+import profilePic from '../../assets/profilePic.png'
 import updateIcon from '../../assets/updateIcon.png'
 import deleteIcon from "../../assets/deleteIcon.png";
 import navNotificationBell from "../../assets/navNotificationBell.png";
@@ -20,8 +22,11 @@ const Dashboard = ({ components }) => {
 
   return (
     <React.Fragment>
-      <div className="">
+      <div className="sect">
         <nav>
+          <div className='logo-container'>
+            <img src={SaverbankLogo} alt="Saver Bank Logo" className='BankLogo' />
+          </div>
           <div
             onClick={() => changeComponent(7)}
             className={`div ${activeIndex === 7 ? "active" : ""}`}
@@ -41,8 +46,8 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(2)}
-            className={`div ${activeIndex === 2 ? "active" : ""}`}
+            onClick={() => changeComponent(3)}
+            className={`div ${activeIndex === 3 ? "active" : ""}`}
           >
             <img src={transactionsIcon} alt="Transactions" />
             <div>
@@ -50,17 +55,17 @@ const Dashboard = ({ components }) => {
             </div>
           </div>
           <div
-            onClick={() => changeComponent(3)}
-            className={`div ${activeIndex === 3 ? "active" : ""}`}
+            onClick={() => changeComponent(4)}
+            className={`div ${activeIndex === 4 ? "active" : ""}`}
           >
-            <img src={navNotificationBell} alt="Transactions" />
+            <img src={navNotificationBell} alt="Notification Bell" />
             <div>
               <h3>Notifications</h3>
             </div>
           </div>
           <div
-            onClick={() => changeComponent(4)}
-            className={`div ${activeIndex === 4 ? "active" : ""}`}
+            onClick={() => changeComponent(2)}
+            className={`div ${activeIndex === 2 ? "active" : ""}`}
           >
             <img src={sendAndReceiveIcon} alt="Receive" />
             <div>
@@ -110,10 +115,13 @@ const Dashboard = ({ components }) => {
             {/* replace with user name after api call */}
             <div className="profile">
               <div className="img">
-                <img src="" alt="Profile" />
+              <img src = {profilePic} alt='profile pic' className='profile-pic'/>
               </div>
               <h4>Smith Daniel</h4>
             </div>
+          </div>
+          <div>
+
           </div>
           {ActiveComponent && <ActiveComponent />}
         </div>

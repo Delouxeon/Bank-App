@@ -6,16 +6,18 @@ function DeleteAccount() {
 
   return (
     <section className="details">
-        <div>
-            <p>Do you want to delete your account?</p>
-            <h5>Are you sure you want to delete your Saver bank account?you can not undo this action</h5>
+      <div className='wrapper'>
+        <div className='confirm-delete'>
+            <h5>Do you want to delete your account?</h5>
+            <p>Are you sure you want to delete your Saver bank account?you can not undo this action</p>
         </div>
         <div className='warning'>
-            <p>Warning</p>
-            <h5>By Deleting your account , you will loose all saved data and your account will be permanently deleted </h5>
+            <h5>Warning</h5>
+            <p>By Deleting your account , you will loose all saved data and your account will be permanently deleted </p>
         </div>
-        <button className='del'>Delete Account</button>
-        <button className='cancel'>Cancel</button>
+        <a className='del btn' href=''>Delete Account</a>
+        <a className='cancel btn' href=''>Cancel</a>
+      </div>
     </section>
   );
 };

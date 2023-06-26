@@ -1,15 +1,68 @@
-.details{
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+*, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.details{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.pictureSection{
+    /* display: flex; */
+}
+
+.profilePicSection{
+    position: relative;
+    width: 200px;
+
+}
+
+
+.cameraIconBg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #81B29A;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.picUploadBtn{
+    position: absolute;
+    bottom: 30%;
+    left: 15rem;
+}
+
+.camera-icon{
+    width: 10px;
+    height: 10px;
+}
+
+
+
 .details div {
     width: 100%;
     margin: 0;
     text-align: left;
 }
-.form-group{
+
+form{
+    margin-top: 2rem 0;
+}
+/* .form-group{
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -28,13 +81,94 @@
 }
 .form-field2 input{
     width: 60%;
+} */
+
+.formInputs-wrapper{
+    display: grid;
+    gap:.7rem; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
 }
-input{
-    height: 41px;
+
+.inputs-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+input, textarea{
+    width: 100%;
     border-radius: 4px;
     border: 1px solid #8E90A0;
     padding: 10px;
 }
-input:focus{
+input:focus,
+textarea:focus
+{
     outline: none;
+    border: 2px solid #8E90A0;
+}
+
+.cancel{
+    border : 1px solid #81B29A
+}
+
+
+@media (min-width: 768px){
+    .formInputs-wrapper{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .form-field1{
+        grid-column: 1/2;
+        grid-row:1/2 ;
+    }
+
+    .form-field2{
+        grid-column: 2/3;
+        grid-row:1/2 ;
+    }
+
+    .form-field3{
+        grid-column: 1/2;
+        grid-row:2/3 ;
+    }
+
+    .form-field4{
+        grid-column: 2/3;
+        grid-row:2/3 ;
+    }
+
+    .form-field5{
+        grid-column: 1/2;
+        grid-row:3/4 ;
+    }
+
+    .form-field6{
+        grid-column: 1/2;
+        grid-row:4/5 ;
+    }
+
+    .form-field7{
+        grid-column: 1/-1;
+        grid-row:5/6 ;
+    }
+
+
+    .form-field8{
+        grid-column: 1/2;
+        grid-row:6/7 ;
+        margin-top:2rem;
+    }
+
+    .form-field9{
+        grid-column: 1/2;
+        grid-row:7/8 ;
+        margin-top:2rem;
+    }
 }

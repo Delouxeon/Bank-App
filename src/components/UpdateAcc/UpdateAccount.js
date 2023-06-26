@@ -5,47 +5,54 @@ import cameraIcon from '../../assets/cameraIcon.png'
 
 const UpdateAccount = () => {
   
-
   return (
     <section className="details">
-        <div>
-            <img src = {profilePic}/>
-            <img src = {cameraIcon}/>
+        <div className='profilePicSection'>
+            <img src = {profilePic} alt='profile pic' className='profile-pic'/>
+            <span className='cameraIconBg'>
+            <img src = {cameraIcon} alt='camera icon' className='camera-icon'/>
+            </span>
+            <a className='btn picUploadBtn' >Upload Now</a>
         </div>
-        <div className="form-group">
-            <div className="form-field1">
-                <label htmlFor="fname">First Name</label> <br />
-                <input type='text'/>
+        <form>
+            <div className='formInputs-wrapper'>
+                <div className="inputs-div form-field1">
+                    <label htmlFor="fname">First Name</label> 
+                    <input type='text'/>
+                </div>
+                <div className="inputs-div form-field2">
+                    <label htmlFor="gender">Gender</label> 
+                    <input type='text'/>
+                </div>
+                <div className="inputs-div form-field3">
+                    <label htmlFor="lname">Last Name</label>
+                    <input type='text'/>
+                </div>
+                <div className="inputs-div form-field4">
+                    <label htmlFor="country">Country</label> 
+                    <input type='text'/>
+                </div>
+            
+                <div className="inputs-div form-field5">
+                    <label htmlFor="bvn">BVN</label>
+                    <input type='text'/>
+                </div>
+                <div className="inputs-div form-field6">
+                    <label htmlFor="email">Phone Number</label>
+                    <input type='text'/>
+                </div>
+                <div className="inputs-div form-field7">
+                    <label htmlFor="address">Residential Address</label>
+                    <textarea cols='30' rows='3'></textarea>
+                </div>
+                <div className="inputs-div form-field8">
+                    <input className='del btn input-btn' value ='Save changes' type='submit'/>
+                </div>
+                <div className="inputs-div form-field9">
+                    <input className='cancel btn input-btn' value='Cancel' type='button'/>
+                </div>
             </div>
-            <div className="form-field2">
-                <label htmlFor="gender">Gender</label> <br />
-                <input type='text'/>
-            </div>
-          </div>
-        <div className="form-group">
-            <div className="form-field1">
-                <label htmlFor="lname">Last Name</label> <br />
-                <input type='text'/>
-            </div>
-            <div className="form-field2">
-                <label htmlFor="country">Country</label> <br />
-                <input type='text'/>
-            </div>
-        </div>
-        <div className="form-field">
-            <label htmlFor="bvn">BVN</label> <br />
-            <input type='text'/>
-        </div>
-        <div className="form-field">
-            <label htmlFor="email">Phone Number</label> <br />
-            <input type='text'/>
-        </div>
-        <div className="form-field">
-            <label htmlFor="address">Residential Address</label> <br />
-            <input type='text'/>
-        </div>
-        <button className='del btn'>Save changes</button>
-        <button className='cancel btn'>Cancel</button>
+        </form>
     </section>
   );
 };
