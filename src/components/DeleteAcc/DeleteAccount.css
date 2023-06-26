@@ -1,28 +1,29 @@
-.details{
-    width: 70%;
-    max-width: 500px;
+.deleteComponent{
+    width: 100%;
+    max-width: 600px;
     display: flex;
-    margin: 20px auto;
+    margin: 2rem auto;
     flex-direction: column;
     justify-content: center;
     border-radius: 8px;
     background-color: #fff;
 }
-.wrapper{
+
+.delete-wrapper{
     width: 70%;
     margin: 4rem auto 2rem;
     text-align: center;
     display: grid;
-    gap:.7rem;
+    gap: 1.5rem;
 }
 
 
 
-.details h5{
+.deleteComponent h5{
     font-size: 20px;
     font-weight: 700;
 }
-.details p{
+.deleteComponent p{
     font-size: 16px;
     line-height: 18.75px;
     font-weight: 400;
@@ -51,4 +52,8 @@ button{
 .cancel{
     background-color: #fff;
     color: #81B29A;
+}
+
+.confirm-delete h5{
+    margin-bottom: 1.5rem;
 }

@@ -5,7 +5,7 @@ const Transactions = () => {
   
 
   return (
-    <section className="details" >
+    <section className="transactionsComponent" >
     </section>
   );
 };

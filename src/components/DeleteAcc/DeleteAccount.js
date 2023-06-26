@@ -5,8 +5,8 @@ function DeleteAccount() {
   
 
   return (
-    <section className="details">
-      <div className='wrapper'>
+    <section className="deleteComponent">
+      <div className='delete-wrapper'>
         <div className='confirm-delete'>
             <h5>Do you want to delete your account?</h5>
             <p>Are you sure you want to delete your Saver bank account?you can not undo this action</p>

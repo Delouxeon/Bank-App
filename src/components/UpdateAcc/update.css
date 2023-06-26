@@ -8,7 +8,7 @@
     width: 100%;
     max-width: 600px;
     display: flex;
-    margin: 20px auto;
+    margin: 20px 1rem;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 8px;
