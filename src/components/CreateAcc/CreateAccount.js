@@ -8,11 +8,15 @@ function CreateAccount() {
       <header>
         <img src={SaverbankLogo} alt="Saver Bank Logo" />
       </header>
-      <section></section>
+      <main>
+        <h1>Welcome to Saver Bank</h1>
+        <button className>Log In</button>
+        <button>Sign Up</button>
+      </main>
       <section className="forms-wrapper">
         <form id="logIn-form" className="logIn-form" action="">
           <div className="form-header">
-            <h1 className="form-heading">Login</h1>
+            <h2 className="form-heading">Login</h2>
           </div>
           <div className="inputs-wrapper">
             <div className="email">
@@ -35,7 +39,7 @@ function CreateAccount() {
         </form>
         <form className="signUp-form" action="">
           <div className="form-header">
-            <h1 className="form-heading">Create an Account</h1>
+            <h2 className="form-heading">Create an Account</h2>
             <span>
               <img src={greenHandEmoji} alt="green hand emoji" />
             </span>
